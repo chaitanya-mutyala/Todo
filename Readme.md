@@ -1,6 +1,6 @@
 # React Todo App
 
-A simple and interactive **Todo application** built with **React**. This app allows users to add, edit, complete, and delete todos. It uses **localStorage** to persist data, so todos are not lost on page reload.
+A simple and interactive **Todo application** built with **React**. This app allows users to add, edit, complete, and delete, dynamically reorder todos . It uses **localStorage** to persist data, so todos are not lost on page reload.
 
 ---
 
@@ -11,6 +11,7 @@ A simple and interactive **Todo application** built with **React**. This app all
 - ✅ Mark todos as completed  
 - ✅ Delete todos  
 - ✅ Persistent storage using `localStorage`  
+- ✅ Dynamically Reorder todos
 - ✅ Responsive and user-friendly UI  
 - ✅ Styled with Tailwind CSS  
 
@@ -18,8 +19,7 @@ A simple and interactive **Todo application** built with **React**. This app all
 
 ## Demo
 
-If deployed, you can access the app on platforms like **Vercel** or **Render**, and todos will persist in the **browser's local storage**.
-
+🔗 **Live Demo:** [Currency Converter](https://todo-liart-seven-15.vercel.app/)
 ---
 
 ## Installation
@@ -27,8 +27,8 @@ If deployed, you can access the app on platforms like **Vercel** or **Render**, 
 1. **Clone the repository:**
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/chaitanya-mutyala/Todo.git
+cd Todo
 ```
 
 2. **Install dependencies:**
