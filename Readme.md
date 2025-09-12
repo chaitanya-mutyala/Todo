@@ -19,7 +19,7 @@ A simple and interactive **Todo application** built with **React**. This app all
 
 ## Demo
 
-🔗 **Live Demo:** [Currency Converter](https://todo-liart-seven-15.vercel.app/)
+🔗 **Live Demo:** [To Do](https://todo-liart-seven-15.vercel.app/)
 ---
 
 ## Installation
