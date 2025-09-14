@@ -41,21 +41,27 @@ function TodoItem({ todo }) {
         onChange={toggleCompleted}
       />
 
-      {/* Drag handle area (between checkbox and pencil) */}
-      <div
-        {...attributes}
-        {...listeners}
-        className="flex-1 cursor-grab"
-      >
+      {/* Editable + Draggable split */}
+      <div className="flex-1 flex">
+        {/* Left half → editable only */}
         <input
           type="text"
-          className={`border outline-none w-full bg-transparent rounded-lg ${
+          className={`border outline-none w-1/2 bg-transparent rounded-l-lg ${
             isTodoEditable ? "border-black/10 px-2" : "border-transparent"
           } ${todo.completed ? "line-through" : ""}`}
           value={todoMsg}
           onChange={(e) => setTodoMsg(e.target.value)}
           readOnly={!isTodoEditable}
         />
+
+        {/* Right half → draggable handle */}
+        <div
+          {...attributes}
+          {...listeners}
+          className="w-1/2 cursor-grab flex items-center justify-center bg-transparent border-l border-dashed border-black/20"
+        >
+          <span className="text-gray-600">⋮⋮</span>
+        </div>
       </div>
 
       {/* Edit button */}
